@@ -8,11 +8,9 @@ public:
     Soldier(int health, int damage);
     virtual void attack(Unit &target);
     virtual void heal(Unit &target);
+    virtual const int getDamage(); // function to get damage value
     virtual ~Soldier(){};
 
-    int getDamage() const { // Funktion til at få fat i damage
-        return damage;
-    }
 private:
     int damage;
 };
