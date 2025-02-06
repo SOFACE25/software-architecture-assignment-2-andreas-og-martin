@@ -10,6 +10,9 @@ public:
     virtual void heal(Unit &target);
     virtual ~Soldier(){};
 
+    int getDamage() const { // Funktion til at få fat i damage
+        return damage;
+    }
 private:
     int damage;
 };
